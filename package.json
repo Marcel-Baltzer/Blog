@@ -1,0 +1,16 @@
+{
+  "name": "Blog",
+  "version": "1.0.0",
+  "description": "My Dev Blog",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": "https://github.com/Marcel-Baltzer/Blog.git",
+  "author": "Marcel Baltzer",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
