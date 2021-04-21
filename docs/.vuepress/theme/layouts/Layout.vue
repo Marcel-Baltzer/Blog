@@ -1,15 +1,10 @@
 <template>
     <v-app>
-        <v-main>
-            <v-container>
-                <v-row>
-                    <v-spacer></v-spacer>
-                    <ToggleTheme />
-                </v-row>
-
-                <label>"Hello Layout"</label>
-            </v-container>
-        </v-main>        
+        
+        <header class="header">
+            <div class=".header__left"></div>
+            <div class=".header__right"><ToggleTheme /></div>                           
+        </header>    
 
         <v-footer padless>
             <v-col
@@ -23,11 +18,23 @@
 </template>
 
 <script>
-    import ToggleTheme from '@theme/components/ToggleTheme.vue'
+    import ToggleTheme from '@theme/components/ToggleTheme.vue'    
 
     export default {
         components: {            
-            ToggleTheme
+            ToggleTheme,            
         }
     }
 </script>
+
+<style lang="stylus">
+.header
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+    padding: 0 calc(3.5rem/2);
+.header__left, .header__right
+    display: flex;
+    align-items: center;
+</style>
