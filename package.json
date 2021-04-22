@@ -16,6 +16,7 @@
     "deepmerge": "^4.2.2",
     "sass": "^1.32.11",
     "sass-loader": "^11.0.1",
+    "vue-feather-icons": "^5.1.0",
     "vuepress": "^1.8.2",
     "vuetify": "^2.4.10"
   },
