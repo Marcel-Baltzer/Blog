@@ -1,7 +1,12 @@
 <template>
     <v-app>
         
-        <Header />
+        <Header />       
+        
+        <v-main>
+            <Author />
+        </v-main>
+            
 
         <v-footer padless>
             <v-col
@@ -15,11 +20,13 @@
 </template>
 
 <script>
-    import Header from '@theme/components/Header.vue'    
+    import Header from '@theme/components/Header.vue'  
+    import Author from '@theme/components/Author.vue'   
 
     export default {
         components: {            
-            Header,            
+            Header,
+            Author,            
         }
     }
 </script>
