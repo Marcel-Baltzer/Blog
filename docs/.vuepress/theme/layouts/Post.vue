@@ -1,24 +1,23 @@
 <template>
     <Layout>
         <div class="post-title">
-        <h1 class="post-title__text"> Hallo Zusammen
-            <!-- {{ "$page.post.title" }} -->
+        <h1 class="post-title__text">
+            {{ $page.frontmatter.title }} 
         </h1>
-
-        <!-- <PostMeta :post="$page.post" /> -->
-
+            <PostMeta :post="$page" />
         </div>
 
         <div class="post content-box">
-        <div class="post__header">
-            <!-- <g-image alt="Cover image" v-if="$page.post.cover_image" :src="$page.post.cover_image" /> -->
-        </div>
+            <div class="post__header">
+                <v-img alt="Cover image" v-if="$page.frontmatter.cover_image" :src="$withBase($page.frontmatter.cover_image)" />
+            </div>
 
-        <!-- <div class="post__content" v-html="$page.post.content" /> -->
+            <!-- <div class="post__content" v-html="$page.excerpt" /> -->
+            <Content class="post__content"/>
 
-        <div class="post__footer">
-            <!-- <PostTags :post="$page.post" /> -->
-        </div>
+            <div class="post__footer">
+                <PostTags :post="$page" />
+            </div>
         </div>
 
         <div class="post-comments">
@@ -30,15 +29,15 @@
 </template>
 
 <script>
-//import PostMeta from '~/components/PostMeta'
-//import PostTags from '~/components/PostTags'
+import PostMeta from '@theme/components/PostMeta'
+import PostTags from '@theme/components/PostTags'
 import Author from '@theme/components/Author.vue'
 
 export default {
     components: {
         Author,
-        //PostMeta,
-        //PostTags
+        PostMeta,
+        PostTags
     },
     // metaInfo () {
     //     return {
@@ -82,12 +81,11 @@ export default {
 
         p:first-of-type
             font-size: 1.2em;
-            color: #111;        
+            //color: #111;        
 
         img
             width: calc(100% + 3.5rem * 2);
             margin-left: calc(3.5rem * -1);
             display: block;
-            max-width: none;  
-
+            max-width: none;
 </style>
