@@ -2,9 +2,9 @@
     <v-app>        
         <Header :show-logo=showLogo />
         
-        <v-main>
+        <main class="main">
             <slot/>
-        </v-main>        
+        </main>        
 
         <v-footer padless>
             <v-col
@@ -29,3 +29,9 @@
         },
     }
 </script>
+
+<style lang="stylus">
+.main
+	margin: 0 auto;
+	padding: 1.5vw 15px 0;
+</style>
