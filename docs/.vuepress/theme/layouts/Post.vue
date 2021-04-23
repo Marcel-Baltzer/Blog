@@ -1,0 +1,93 @@
+<template>
+    <Layout>
+        <div class="post-title">
+        <h1 class="post-title__text"> Hallo Zusammen
+            <!-- {{ "$page.post.title" }} -->
+        </h1>
+
+        <!-- <PostMeta :post="$page.post" /> -->
+
+        </div>
+
+        <div class="post content-box">
+        <div class="post__header">
+            <!-- <g-image alt="Cover image" v-if="$page.post.cover_image" :src="$page.post.cover_image" /> -->
+        </div>
+
+        <!-- <div class="post__content" v-html="$page.post.content" /> -->
+
+        <div class="post__footer">
+            <!-- <PostTags :post="$page.post" /> -->
+        </div>
+        </div>
+
+        <div class="post-comments">
+        <!-- Add comment widgets here -->
+        </div>
+
+        <Author class="post-author" />
+    </Layout>
+</template>
+
+<script>
+//import PostMeta from '~/components/PostMeta'
+//import PostTags from '~/components/PostTags'
+import Author from '@theme/components/Author.vue'
+
+export default {
+    components: {
+        Author,
+        //PostMeta,
+        //PostTags
+    },
+    // metaInfo () {
+    //     return {
+    //     title: this.$page.post.title,
+    //     meta: [
+    //         {
+    //         name: 'description',
+    //         content: this.$page.post.description
+    //         }
+    //     ]
+    //     }
+    // }
+}
+</script>
+
+<style lang="stylus">
+.post-tile
+    padding: calc(3.5rem / 2) 0 calc(3.5rem / 2); 
+    text-align: center;
+
+.post
+    &__header
+        width: calc(100% + 3.5rem * 2);
+        margin-left: calc(3.5rem * -1);
+        margin-top: calc(3.5rem * -1);
+        margin-bottom: calc(3.5rem / 2);
+        overflow: hidden;
+        border-radius: 5px 5px 0 0;
+
+        img 
+            width: 100%;
+    
+        &:empty
+            display: none;
+
+
+    &__content
+        h2:first-child
+            margin-top: 0;
+        
+
+        p:first-of-type
+            font-size: 1.2em;
+            color: #111;        
+
+        img
+            width: calc(100% + 3.5rem * 2);
+            margin-left: calc(3.5rem * -1);
+            display: block;
+            max-width: none;  
+
+</style>
