@@ -8,7 +8,7 @@
         <p class="post-card__description" v-html="post.frontmatter.description" />
 
         <PostMeta class="post-card__meta" :post="post" />
-        <!-- <PostTags class="post-card__tags" :post="post" /> -->
+        <PostTags class="post-card__tags" :post="post" />
 
         <router-link :to="post.path" class="post-card__link">Link</router-link>
         </div>
@@ -17,10 +17,12 @@
 
 <script>
 import PostMeta from '@theme/components/PostMeta'
+import PostTags from '@theme/components/PostTags'
 
 export default {
     components: {
         PostMeta,
+        PostTags,
     },
     props: ['post'],
 }

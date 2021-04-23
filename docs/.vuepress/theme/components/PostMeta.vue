@@ -8,7 +8,7 @@
             })        
         }}.
         <template v-if="post.frontmatter.timeToRead">
-            <!-- TODO: Calculate TimeToRead -->
+            <!-- TODO: Calculate TimeToRead and use icons-->
             <strong>{{ post.frontmatter.timeToRead }} min read.</strong> 
         </template>
     </div>
