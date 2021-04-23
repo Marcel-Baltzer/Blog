@@ -5,6 +5,7 @@ published: true
 tags:
   - JavaScript
   - Vue
+  - Markdown
 series: false
 cover_image: /alexandr-podvalny-220262-unsplash.jpg
 canonical_url: false

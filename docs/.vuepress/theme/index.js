@@ -15,6 +15,16 @@ module.exports = {
                     itemLayout: 'Post',
                 },
             ],
+            frontmatters: [
+                {
+                    id: "tag",
+                    keys: ["tag", "tags"],
+                    path: "/tag/",
+                    // layout: 'Tag',  defaults to `FrontmatterKey.vue`
+                    scopeLayout: 'Tag',
+                    frontmatter: { title: "Tag" },
+                }
+            ]
         }
     ],
 ]
