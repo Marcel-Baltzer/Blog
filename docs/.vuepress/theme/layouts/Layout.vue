@@ -4,16 +4,18 @@
         
         <main class="main">
             <slot/>
-        </main>        
+        </main> 
+        
+        <footer class="footer">
+            <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. </span>
+            <span class="footer__links">
+                Created with 
+                <a href="//vuepress.vuejs.org"> Vuepress </a> 
+                and 
+                <a href="//vuetifyjs.com"> Vuetify </a>
+            </span>
+        </footer>
 
-        <v-footer padless>
-            <v-col
-            class="text-center"
-            cols="12"
-            >
-            {{ new Date().getFullYear() }} — <strong>Marcel Baltzer</strong>
-            </v-col>
-        </v-footer>
     </v-app>
 </template>
 
@@ -34,4 +36,19 @@
 .main
 	margin: 0 auto;
 	padding: 1.5vw 15px 0;
+
+.footer
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: calc(var(--space) / 2);
+	text-align: center;
+	font-size: .8em;
+
+	> span
+		margin: 0 .35em;
+
+	a
+		color: currentColor;
+
 </style>
