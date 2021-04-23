@@ -1,6 +1,6 @@
 <template>
     <v-app>        
-        <Header />
+        <Header :show-logo=showLogo />
         
         <v-main>
             <slot/>
@@ -23,6 +23,9 @@
     export default {
         components: {            
             Header                     
-        }
+        },
+        props: {
+            showLogo: { default: true }
+        },
     }
 </script>
