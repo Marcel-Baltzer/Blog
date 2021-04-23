@@ -1,14 +1,14 @@
 <template>
     <div class="post-card content-box" :class="{'post-card--has-poster' : post.poster}">
         <div class="post-card__header">
-            <v-img alt="Cover image" contain aspect-ratio="1.4" v-if="post.frontmatter.cover_image" class="post-card__image" :src="$withBase(post.frontmatter.cover_image)"/>
+            <v-img alt="Cover image" v-if="post.frontmatter.cover_image" class="post-card__image" :src="$withBase(post.frontmatter.cover_image)"/>
         </div>
         <div class="post-card__content">
         <h1 class="post-card__title" v-html="post.frontmatter.title" />
         <p class="post-card__description" v-html="post.frontmatter.description" />
 
-        <!-- <PostMeta class="post-card__meta" :post="post" />
-        <PostTags class="post-card__tags" :post="post" /> -->
+        <PostMeta class="post-card__meta" :post="post" />
+        <!-- <PostTags class="post-card__tags" :post="post" /> -->
 
         <router-link :to="post.path" class="post-card__link">Link</router-link>
         </div>
@@ -16,8 +16,12 @@
 </template>
 
 <script>
+import PostMeta from '@theme/components/PostMeta'
 
 export default {
+    components: {
+        PostMeta,
+    },
     props: ['post'],
 }
 </script>
@@ -40,6 +44,9 @@ export default {
 
     &__image
         min-width: 100%;
+        width: 770;
+        height: 380;
+        blur: 10;
 
     &__title
         margin-top: 0;
