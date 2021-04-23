@@ -10,7 +10,9 @@ module.exports = {
                     // Target directory
                     dirname: '_posts',
                     // Path of the `entry page` (or `list page`)
-                    path: '/',
+                    path: '/', 
+                    layout: 'Index',  
+                    itemLayout: 'Post',
                 },
             ],
         }
