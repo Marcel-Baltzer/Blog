@@ -1,13 +1,11 @@
 <template>
     <Layout :show-logo="false">
         <Author />
-        <label>hallo</label>
 
         <div>
-            <PostCard v-for="post in this.$site.pages" :key="post.key" :post="post"/>
+            <PostCard v-for="post in $pagination.pages" :key="post.key" :post="post"/>
         </div>
 
-        <label>hallo2</label>
     </Layout>
 </template>
 
