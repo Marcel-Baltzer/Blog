@@ -9,7 +9,6 @@
             })        
         }}.
         <template v-if="post.readingTime">
-            <!-- TODO: Calculate TimeToRead-->
             <ClockIcon />
             <strong>{{ post.readingTime.text }}.</strong> 
         </template>
