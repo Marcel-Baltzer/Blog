@@ -3,7 +3,7 @@
         <Author />
 
         <div>
-            <PostCard v-for="post in $pagination.pages" :key="post.key" :post="post"/>
+            <PostCard v-for="post in $pagination.pages.filter(page => page.frontmatter.published === true)" :key="post.key" :post="post"/>
         </div>
 
     </Layout>

@@ -1,6 +1,6 @@
 <template>   
     <router-link class="blog-tag" :to="tag.path">
-        {{ tag.name }} ({{ tag.pages.length }})
+        {{ tag.name }} ({{ tag.pages.filter(page => page.frontmatter.published === true).length }})
     </router-link>
 </template>
 

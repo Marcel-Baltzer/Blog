@@ -1,6 +1,7 @@
 ---
 title: Markdown test file
 date: 2021-04-05
+published: true
 tags:
   - JavaScript
   - Vue
