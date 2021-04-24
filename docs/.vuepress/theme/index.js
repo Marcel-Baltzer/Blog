@@ -32,6 +32,9 @@ module.exports = {
             {
                 canonical_base: 'https://marcelbaltzer.de',
             }
+        ],
+        [
+            'vuepress-plugin-reading-time'
         ]
     ]
 }

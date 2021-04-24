@@ -8,10 +8,10 @@
                 day: "numeric"
             })        
         }}.
-        <template v-if="post.frontmatter.timeToRead">
+        <template v-if="post.readingTime">
             <!-- TODO: Calculate TimeToRead-->
             <ClockIcon />
-            <strong>{{ post.frontmatter.timeToRead }} min read.</strong> 
+            <strong>{{ post.readingTime.text }}.</strong> 
         </template>
     </div>
 </template>

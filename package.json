@@ -19,6 +19,7 @@
     "vue-feather-icons": "^5.1.0",
     "vuepress": "^1.8.2",
     "vuepress-plugin-feed": "^0.1.9",
+    "vuepress-plugin-reading-time": "^0.1.1",
     "vuetify": "^2.4.10"
   },
   "dependencies": {}
