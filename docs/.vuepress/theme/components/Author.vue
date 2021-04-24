@@ -22,6 +22,10 @@
 		<a :href="'https://www.linkedin.com/in/marcel-baltzer-4a369a93/'">
             <LinkedinIcon />			
         </a>
+
+		<a :href="$withBase('rss.xml')">
+            <RssIcon />			
+        </a>
 		
     </div>
 </template>
@@ -31,13 +35,15 @@ import {
 	GithubIcon,
 	TwitterIcon,
 	LinkedinIcon,
+	RssIcon
 } from 'vue-feather-icons'
 
 export default {
 	components: {
 		GithubIcon,
 		TwitterIcon,
-		LinkedinIcon
+		LinkedinIcon,
+		RssIcon
 }
 }
 </script>
