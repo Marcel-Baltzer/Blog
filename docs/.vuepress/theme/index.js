@@ -31,6 +31,17 @@ module.exports = {
             'feed', 
             {
                 canonical_base: 'https://marcelbaltzer.de',
+                is_feed_page: ( page ) =>
+                {
+                    return page.frontmatter.published === true;                
+                },
+                sort: ( entries ) =>
+                {
+                    return entries.sort(function(a,b) 
+                    { 
+                        return new Date(b.frontmatter.date) - new Date(a.frontmatter.date); 
+                    })
+                }
             }
         ],
         [
