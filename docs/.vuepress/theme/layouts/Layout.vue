@@ -2,9 +2,9 @@
     <v-app>        
         <Header :show-logo=showLogo />
         
-        <main class="main">
+        <v-main class="main">
             <slot/>
-        </main> 
+        </v-main> 
         
         <footer class="footer">
             <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. </span>
