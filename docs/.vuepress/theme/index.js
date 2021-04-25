@@ -46,6 +46,12 @@ module.exports = {
         ],
         [
             'vuepress-plugin-reading-time'
+        ],
+        [
+            '@vuepress/google-analytics',
+            {
+              'ga': 'G-SGHMFSK4N6' // UA-00000000-0
+            }
         ]
     ]
 }
