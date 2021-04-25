@@ -21,7 +21,8 @@
         </div>
 
         <div class="post-comments">
-        <!-- Add comment widgets here -->
+            <!-- Add comment widgets here -->
+            <Comment />
         </div>
 
         <Author class="post-author" />
@@ -32,12 +33,14 @@
 import PostMeta from '@theme/components/PostMeta'
 import PostTags from '@theme/components/PostTags'
 import Author from '@theme/components/Author.vue'
+import { Comment } from '@vuepress/plugin-blog/lib/client/components'
 
 export default {
     components: {
         Author,
         PostMeta,
-        PostTags
+        PostTags,
+        Comment,
     },
     // metaInfo () {
     //     return {

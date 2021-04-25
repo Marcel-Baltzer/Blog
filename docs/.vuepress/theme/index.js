@@ -26,7 +26,18 @@ module.exports = {
                         scopeLayout: 'Tag',
                         frontmatter: { title: "Tag" },
                     }
-                ]
+                ],
+                comment: {
+                    // Which service you'd like to use
+                    service: 'vssue',
+                    // The owner's name of repository to store the issues and comments.
+                    owner: 'Marcel-Baltzer',
+                    // The name of repository to store the issues and comments.
+                    repo: 'Blog-Comments',
+                    // The clientId & clientSecret introduced in OAuth2 spec.
+                    clientId: process.env.CLIENTID,
+                    clientSecret: process.env.CLIENTSECRET,
+                },
             }
         ],
         [ 
