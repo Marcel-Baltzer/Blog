@@ -42,17 +42,6 @@ export default {
         PostTags,
         Comment,
     },
-    // metaInfo () {
-    //     return {
-    //     title: this.$page.post.title,
-    //     meta: [
-    //         {
-    //         name: 'description',
-    //         content: this.$page.post.description
-    //         }
-    //     ]
-    //     }
-    // }
 }
 </script>
 
