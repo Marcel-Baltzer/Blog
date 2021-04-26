@@ -18,6 +18,7 @@ module.exports = {
                         path: '/', 
                         layout: 'Index',  
                         itemLayout: 'Post',
+                        frontmatter: { title: 'Hello, world!' },
                     },
                 ],
                 frontmatters: [
