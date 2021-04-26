@@ -19,7 +19,7 @@ This Blog is inspired by https://github.com/gridsome/gridsome-starter-blog.
 
 https://marcelbaltzer.de
 
-### Use this blog
+### How to use it
 
 You can build this blog with
 
@@ -27,6 +27,15 @@ You can build this blog with
 
 and run it with
 
-`yarn docs:dev`
+`yarn docs:dev (http://localhost:8080)`
 
-This Blog is using environment variables for Vssue. Please look at the file .env_sample and create your own .env file locally.
+This Blog is using environment variables for Vssue.
+Please look at the file .env_sample and create your own .env file locally.
+
+You can find the output directory here.
+
+`docs/.vuepress/dist`
+
+I deploy the source code automatically with vercel.
+
+Happy coding 🎉.
