@@ -5,6 +5,9 @@ module.exports = {
         [
             '@vuepress/blog',
             {
+                sitemap: {
+                    hostname: 'https://marcelbaltzer.de'
+                },                
                 directories: [
                     {
                         // Unique ID of current classification
