@@ -28,8 +28,8 @@ export default ({
                 dark: {
                     bgcolor: '#0D2538',
                     bgcontentcolor: '#0f2d44',
-                    bgcode : 'rgba(0,0,0,.3)',
-                    bordercolor:  'rgba(255,255,255,.1)',
+                    bgcode : '#000000',
+                    bordercolor:  '#ffffff',
                     bodycolor: '#ced8de',
                     titlecolor: '#fff',
                     linkcolor: '#af9cef',
