@@ -21,6 +21,7 @@ export default ({
                     bgcolor: '#F3F7F9',
                     bgcontentcolor: '#fff',
                     bgcode : '#fffbf3',
+                    bordercolor:  '#000000',
                     bodycolor: '#444',
                     titlecolor: '#111',
                     linkcolor: '#6b17e6',
