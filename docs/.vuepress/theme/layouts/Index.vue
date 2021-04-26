@@ -1,6 +1,6 @@
 <template>
     <Layout :show-logo="false">
-        <Author />
+        <Author :show-title="true"/>
 
         <div>
             <PostCard v-for="post in $pagination.pages.filter(page => page.frontmatter.published === true)" :key="post.key" :post="post"/>

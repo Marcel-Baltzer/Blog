@@ -1,7 +1,7 @@
 <template>
 	<router-link class="logo" to="/">
         <span class="logo__text">
-            &larr; {{ "Back" }}
+            &larr; {{ $site.title }}
         </span>
 	</router-link>
 </template>

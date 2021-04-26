@@ -3,8 +3,8 @@
         <v-img class="author__image" :src="$withBase('/avatar.png')">
         
         </v-img>
-        <h1 class="author__site-title">
-			.Net Dev Blog
+        <h1 v-if="showTitle" class="author__site-title">
+			{{ $site.title }}
 		</h1>
         
 		<p class="author__intro">
@@ -44,7 +44,8 @@ export default {
 		TwitterIcon,
 		LinkedinIcon,
 		RssIcon
-}
+	},
+	props: ['showTitle']
 }
 </script>
 
