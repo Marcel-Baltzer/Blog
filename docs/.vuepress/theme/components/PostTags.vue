@@ -19,9 +19,8 @@ export default {
     &__link
         margin-right: .7em;
         font-size: .8em;
-        color: currentColor;
         text-decoration: none;
-        //background-color: var(--bg-color);
+        background-color: var(--v-bgcolor-base)!important;
         color: currentColor!important; //Todo: remove important;
         padding: .5em;
         border-radius: var(--radius);

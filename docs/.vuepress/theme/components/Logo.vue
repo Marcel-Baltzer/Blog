@@ -9,7 +9,7 @@
 <style lang="stylus">
 .logo
 	text-decoration: none;
-	color: var(--body-color)!important;
+	color: var(--v-bodycolor-base)!important;
 	font-size: .9em;
 
 	&__image

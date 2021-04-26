@@ -1,5 +1,5 @@
 <template>
-    <v-app>        
+    <v-app id="main" :style="{ background: $vuetify.theme.themes[theme].bgcolor }">        
         <Header :show-logo=showLogo />
         
         <v-main class="main">
@@ -23,12 +23,18 @@
     import Header from '@theme/components/Header.vue'     
 
     export default {
+        name: 'App',
         components: {            
             Header                     
         },
         props: {
             showLogo: { default: true }
         },
+        computed:{
+            theme(){
+                return (this.$vuetify.theme.dark) ? 'dark' : 'light'
+            }
+        }
     }
 </script>
 
