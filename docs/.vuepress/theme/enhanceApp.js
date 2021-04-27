@@ -15,6 +15,7 @@ export default ({
     Vue.use(Vuetify)
     options.vuetify = new Vuetify({
         theme: {
+            dark: true,
             options: { customProperties: true },
             themes: {
                 light: {
@@ -25,11 +26,12 @@ export default ({
                     bodycolor: '#444',
                     titlecolor: '#111',
                     linkcolor: '#3eaf7c',
-                    VssueThemeColor: '#3eaf7c',
+                    VssueThemeColor: '#F3F7F9',
                     VssueTextColor: '#2c3e50',
                     VssueTextLightColor: '#a3aab1',
                     VssueBorderColor: '#eaecef',
-                    VssueProgressColor: '#3eaf7c', // Default vssue-theme-color
+                    VssueProgressColor: '#3eaf7c',
+                    VssueLinkColor: '#3eaf7c',
 
                 },
                 dark: {
@@ -40,11 +42,12 @@ export default ({
                     bodycolor: '#ced8de',
                     titlecolor: '#fff',
                     linkcolor: '#3eaf7c',
-                    VssueThemeColor: '#3eaf7c',
+                    VssueThemeColor: '#0D2538',
                     VssueTextColor: '#fff',
                     VssueTextLightColor: '#fff',
                     VssueBorderColor: '#fff',
-                    VssueProgressColor: '#3eaf7c', // Default vssue-theme-color
+                    VssueProgressColor: '#3eaf7c',
+                    VssueLinkColor: '#3eaf7c',
                 }
             }
         }
