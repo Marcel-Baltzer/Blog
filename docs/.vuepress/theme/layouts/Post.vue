@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <div class="post-comments">
+        <div class="post-comments content-box">
             <!-- Add comment widgets here -->
             <Comment />
         </div>
@@ -80,4 +80,7 @@ export default {
             margin-left: calc(3.5rem * -1);
             display: block;
             max-width: none;
+
+.post-comments
+    margin-top: calc(3.5rem * 1);
 </style>
