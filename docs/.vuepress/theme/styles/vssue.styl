@@ -1,0 +1,129 @@
+// //Override all vssue color styles for light/dark toogle
+
+//_button.styl
+.vssue-button
+    color: var(--v-VssueThemeColor-base)!important;
+    border: 2px solid var(--v-VssueThemeColor-base)!important;
+
+    &:disabled
+        color: var(--v-VssueBorderColor-base)!important;
+        border-color: var(--v-VssueBorderColor-base)!important;
+        .vssue-icon
+            fill: var(--v-VssueBorderColor-base)!important;
+    &:not(:disabled)
+        &.vssue-button-default
+            color: var(--v-VssueTextLightColor-base)!important;
+            border-color: var(--v-VssueTextLightColor-base)!important;
+        &.vssue-button-primary
+            color: var(--v-VssueThemeColor-base)!important;
+            border-color: var(--v-VssueThemeColor-base)!important;
+
+//_comments.styl
+.vssue-comments
+    .vssue-comment
+        &.vssue-comment-edit-mode
+            .vssue-comment-main
+                border-color: var(--v-VssueThemeColor-lighten3)!important;
+                box-shadow: 0 0 1px 1px var(--v-VssueThemeColor-lighten3)!important;
+        &.vssue-comment-disabled
+            .vssue-comment-body
+                background-color: var(--v-VssueBorderColor-lighten5)!important;
+        .vssue-comment-header
+            border: 1px solid var(--v-VssueBorderColor-base)!important;
+            .vssue-comment-created-at
+                color: var(--v-VssueTextLightColor-base)!important;
+        .vssue-comment-main
+            border: 1px solid var(--v-VssueBorderColor-base)!important;
+            .vssue-edit-comment-input
+                color: var(--v-VssueTextLightColor-base)!important;
+            .markdown-body
+                color: var(--v-VssueTextLightColor-base)!important;
+        .vssue-comment-footer
+            border: 1px solid var(--v-VssueBorderColor-base)!important;
+            .vssue-comment-hint
+                color: var(--v-VssueTextLightColor-base)!important;
+            .vssue-comment-reactions
+                .vssue-comment-reaction
+                    color: var(--v-VssueThemeColor-base)!important;
+            .vssue-comment-operations
+                color: var(--v-VssueThemeColor-base)!important;
+                .vssue-comment-operation
+                    &.vssue-comment-operation-muted
+                        color: var(--v-VssueTextLightColor-base)!important;
+                        .vssue-icon
+                            fill: var(--v-VssueTextLightColor-base)!important;
+
+//_header.styl
+.vssue-header
+    border-bottom: 1px solid var(--v-VssueBorderColor-base)!important;
+
+//_icon.styl
+.vssue-icon
+    fill: var(--v-VssueThemeColor-base)!important; 
+
+//new-comment.styl
+.vssue-new-comment
+    border-bottom: 1px solid var(--v-VssueBorderColor-base)!important;
+    .vssue-comment-avatar
+        .vssue-icon
+            fill: var(--v-VssueTextLightColor-darken2)!important;
+    .vssue-new-comment-footer
+        .vssue-current-user
+            color: var(--v-VssueTextLightColor-base)!important;
+            .vssue-logout
+                color: var(--v-VssueTextLightColor-base)!important;
+    .vssue-new-comment-input
+        //background-color: var(--v-VssueThemeColor-lighten5)!important;
+        background-color: var(--v-bgcolor-lighten5)!important;
+        border: 1px solid var(--v-VssueBorderColor-base)!important;
+        &:disabled
+            background-color: var(--v-VssueBorderColor-lighten2)!important;
+        &:focus
+            background-color #ffffff!important;
+            //border-color: var(--v-VssueThemeColor-lighten3)!important;
+            border-color: var(--v-bgcolor-lighten3)!important;
+            //box-shadow: 0 0 1px 1px var(--v-VssueThemeColor-lighten3)!important;
+            box-shadow: 0 0 1px 1px var(--v-bgcolor-lighten3)!important;
+        &::placeholder
+            color: var(--v-VssueTextLightColor-base)!important;
+
+//notice.styl
+.vssue-notice
+    .vssue-alert
+        color: var(--v-VssueThemeColor-base)!important;
+        border: solid 2px var(--v-VssueThemeColor-lighten4)!important;
+        background-color: var(--v-VssueThemeColor-lighten5)!important;
+    .vssue-progress
+        background-color: var(--v-VssueProgressColor-base)!important;
+
+//pagination.styl
+.vssue-pagination
+    color: var(--v-VssueTextLightColor-base)!important;
+    .vssue-pagination-select
+        //border: 1px solid var(--v-VssueThemeColor-lighten3)!important;
+        border: 1px solid var(--v-bgcolor-lighten3)!important;
+        background-color: #fff!important;
+        //background-image: url()!important;
+        &:focus
+            //box-shadow: 0 0 0.2px 0.2px var(--v-VssueThemeColor-lighten3)!important;
+            box-shadow: 0 0 0.2px 0.2px var(--v-bgcolor-lighten3)!important;
+    .vssue-pagination-link
+        &:not(.disabled)
+            color: var(--v-VssueThemeColor-base)!important;
+
+//rtl.styl
+.vssue-header
+    border-bottom 1px solid var(--v-VssueBorderColor-base)!important;
+
+//statis.styl
+.vssue-status
+    color: var(--v-VssueThemeColor-base)!important;
+
+//intex.styl
+.vssue
+    color: var(--v-VssueTextColor-base)!important;
+    :not(.vssue-comment-content)
+        a
+            color : var(--v-VssueThemeColor-base)!important; 
+        hr
+            border-top: 1px solid var(--v-VssueBorderColor-base)!important;
