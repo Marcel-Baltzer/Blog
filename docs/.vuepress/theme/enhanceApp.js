@@ -24,7 +24,13 @@ export default ({
                     bordercolor:  '#000000',
                     bodycolor: '#444',
                     titlecolor: '#111',
-                    linkcolor: '#6b17e6',
+                    linkcolor: '#3eaf7c',
+                    VssueThemeColor: '#3eaf7c',
+                    VssueTextColor: '#2c3e50',
+                    VssueTextLightColor: '#a3aab1',
+                    VssueBorderColor: '#eaecef',
+                    VssueProgressColor: '#3eaf7c', // Default vssue-theme-color
+
                 },
                 dark: {
                     bgcolor: '#0D2538',
@@ -33,7 +39,12 @@ export default ({
                     bordercolor:  '#ffffff',
                     bodycolor: '#ced8de',
                     titlecolor: '#fff',
-                    linkcolor: '#af9cef',
+                    linkcolor: '#3eaf7c',
+                    VssueThemeColor: '#3eaf7c',
+                    VssueTextColor: '#fff',
+                    VssueTextLightColor: '#fff',
+                    VssueBorderColor: '#fff',
+                    VssueProgressColor: '#3eaf7c', // Default vssue-theme-color
                 }
             }
         }
