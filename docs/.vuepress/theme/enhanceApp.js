@@ -38,7 +38,7 @@ export default ({
                     CodeBlockColorPunctuation: '#708090',
                     CodeBlockColorTag: '#905',
                     CodeBlockColorAttribute: '#690',
-                    CodeBlockColorNamespace: '#000000B3',
+                    CodeBlockColorNamespace: '#000000',
                     CodeBlockColorFunktionName: '#6196cc',
                     CodeBlockColorBool: '#905',
                     CodeBlockColorFunktion: '#DD4A68',
