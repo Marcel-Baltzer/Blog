@@ -1,9 +1,22 @@
 // Default variables
-html 
+html {
 	--base-font-size: 20px;
+}
 
-body
+body {
 	--space: 3.5rem;
 	--content-width: 860px;
 	--header-height: 80px;
 	--radius: 5px;
+}
+
+// Make  things smaller for mobile
+@media screen and (max-width: 650px) {
+	html {
+		--base-font-size: 17px;
+	}
+	body {
+		--space: 1.5rem;
+		--header-height: 60px;
+	}
+}
