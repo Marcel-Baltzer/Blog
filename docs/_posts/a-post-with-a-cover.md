@@ -1,7 +1,7 @@
 ---
 title: A post with a cover image
 date: 2021-04-02
-published: true
+published: false
 tags:
   - JavaScript
   - Vue
