@@ -8,7 +8,7 @@
 		</h1>
         
 		<p class="author__intro">
-			I am a passionate Software Engineer, I love the phoenix project ♥ ...
+			I am a passionate Software Engineer and here I want to share what I know about software development.
 		</p>
 
 		<a :href="'https://github.com/Marcel-Baltzer'">
