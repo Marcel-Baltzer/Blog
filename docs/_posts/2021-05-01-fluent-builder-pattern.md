@@ -7,7 +7,7 @@ tags:
   - .Net
   - C#
 series: false
-cover_image: /fluent-builder.jpg
+cover_image: /fluent-builder-cover.jpg
 canonical_url: false
 description: "Helper methods make it easier to create test data. But they can become difficult to read over time as
 you need more variations of the test data to satisfy constantly evolving requirements from new tests."
