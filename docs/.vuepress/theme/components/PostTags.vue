@@ -20,7 +20,7 @@ export default {
         margin-right: .7em;
         font-size: .8em;
         text-decoration: none;
-        background-color: var(--v-bgcolor-base)!important;
+        background-color: var(--v-BackgroundColor-base)!important;
         color: currentColor!important; //Todo: remove important;
         padding: .5em;
         border-radius: var(--radius);

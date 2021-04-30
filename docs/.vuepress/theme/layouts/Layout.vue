@@ -1,5 +1,5 @@
 <template>
-    <v-app id="main" :style="{ background: $vuetify.theme.themes[theme].bgcolor }">        
+    <v-app id="main" :style="{ background: $vuetify.theme.themes[theme].BackgroundColor }">        
         <Header :show-logo=showLogo />
         
         <v-main class="main">

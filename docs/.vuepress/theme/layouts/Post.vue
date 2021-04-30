@@ -73,7 +73,7 @@ export default {
 
         p:first-of-type
             font-size: 1.2em;
-            color: --v-titlecolor-base;        
+            color: --v-TitleColor-base;        
 
         img
             width: calc(100% + 3.5rem * 2);
