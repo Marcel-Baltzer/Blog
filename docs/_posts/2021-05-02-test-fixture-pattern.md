@@ -128,7 +128,7 @@ If you can choose, the transient fresh test fixtures are the best approach.
 
 The last fixture is the persistent shared fixture. For example if you dispose after each test the database connections, your tests are gonna run forever. Database connections can be pretty expensive. It would probably be better to share a single database connection over the whole suite of tests.
 
-In Xunit we use `IClassFixture` class.
+In xunit we use a fixture class with `IClassFixture`.
 
 ```csharp
 public class DatabaseFixture : IDisposable
@@ -157,16 +157,6 @@ public class DatabaseTests : IClassFixture<DatabaseFixture>
         this.fixture = fixture;
     }
 
-    //...
-}
-
-```
-
-```csharp
-public class DatabaseTests : IClassFixture<DatabaseFixture>
-{
-    //...
-
     [Fact]
     public void Test1()
     {
@@ -179,6 +169,7 @@ public class DatabaseTests : IClassFixture<DatabaseFixture>
         Debug.WriteLine("Execute Test 2");
     }
 }
+
 ```
 
 When we run this test we can see that the DatabaseFixture constructor is called add the beginning and dispose after the last test.
