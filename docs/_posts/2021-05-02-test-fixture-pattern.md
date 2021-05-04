@@ -1,5 +1,5 @@
 ---
-title: Share test context between tests with fixtures
+title: Share context between tests with fixtures
 date: 2021-05-02
 published: true
 tags:
@@ -183,7 +183,7 @@ public class DatabaseTests : IClassFixture<DatabaseFixture>
 
 When we run this test we can see that the DatabaseFixture constructor is called add the beginning and dispose after the last test.
 
-```command-line
+```
 Initialize Shared Fixture
 Execute Test 2
 Execute Test 1
@@ -192,7 +192,7 @@ Dispose Shared Fixture
 
 If you combine all type of fixtures the output would be.
 
-```command-line
+```
 Initialize Shared Fixture
 Initialize Fixture
 Execute Test 1
