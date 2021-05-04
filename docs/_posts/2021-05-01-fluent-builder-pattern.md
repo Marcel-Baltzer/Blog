@@ -16,7 +16,7 @@ you need more variations of the test data to satisfy constantly evolving require
 Helper methods make it easier to create test data. But they can become difficult to read over time as
 you need more variations of the test data to satisfy constantly evolving requirements from new tests.
 
-Let say, we have the following Customers class.
+Let say, we have the following Customer class.
 
 ```csharp
 public class Customer
@@ -120,7 +120,7 @@ You can use it now like:
 
 ```csharp
 var customer = new CustomerBuilder()
-            .WithName("")
+            .WithName("Jacob Knight")
             .WithDateOfBirth(Convert.ToDateTime("01/05/1988"))
             .WithEmail("nofec547@anim.com")
             .WithAddress("4429 Kelley Roa")
@@ -143,7 +143,7 @@ public class CustomerBuilder
 
 ```csharp
 Customer implicitCustomer = new CustomerBuilder()
-            .WithName("")
+            .WithName("Jacob Knight")
             .WithDateOfBirth(Convert.ToDateTime("01/05/1988"))
             .WithEmail("nofec547@anim.com")
             .WithAddress("4429 Kelley Roa");
