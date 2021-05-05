@@ -95,7 +95,7 @@ public void OffsetServiceTest()
 
     var offset = new Offset(fakeDateTimeProvider);
 
-    var result = offset.ReturnCurrentOffsetWithProvider();
+    var result = offset.ReturnCurrentOffset();
 
     result.Should().Be(120);
 }
