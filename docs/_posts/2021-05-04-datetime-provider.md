@@ -14,6 +14,8 @@ description: "Our code is often time-dependent. We use the date or time to imple
 
 Our code is often time-dependent. We use the date or time to implement logic and make decisions in our code. The behavior of DateTime.Now or DateTime.UtcNow can differ due to the system, timezone and the time change (summer/winter). This means that we have to control this for our tests.
 
+Take this method for instance:
+
 ```csharp
 public double ReturnCurrentOffset()
 {
@@ -23,7 +25,7 @@ public double ReturnCurrentOffset()
 }
 ```
 
-As you see, this method calculates the current offset with `DateTime.Now` and `DateTime.UtcNow`. Now suppose you want to write unit test for it. We can not control the static properties and the result will be different over the year and the test will fail in the future.
+As you see, this method calculates the current offset with `DateTime.Now` and `DateTime.UtcNow`. Now suppose you want to write unit test for it. We can not control the static properties. The result will be different over the year and the test will fail in the future.
 
 The cleaner way of doing that is to create an interface and a class wrapped around the static datetime properties.
 
@@ -74,7 +76,7 @@ public class OffsetService
 }
 ```
 
-Now you can use your favorite mocking framework and take control over the `IDateTimeProvider`. I'm using [xUnit.net](https://xunit.net/), [FakeItEasy](https://fakeiteasy.github.io/) and [FluentAssertion](https://fluentassertions.com/) for beautiful, natural and readable tests.
+Now you can use your favorite mocking framework and take control over the `IDateTimeProvider`. I'm using [xUnit.net](https://xunit.net/), [FakeItEasy](https://fakeiteasy.github.io/) and [FluentAssertion](https://fluentassertions.com/) in my example.
 
 ```csharp
 [Fact]
