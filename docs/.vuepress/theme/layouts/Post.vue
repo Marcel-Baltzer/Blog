@@ -1,9 +1,9 @@
 <template>
     <Layout>
         <div class="post-title">
-        <h1 class="post-title__text">
-            {{ $page.frontmatter.title }} 
-        </h1>
+            <h1 class="post-title__text">
+                {{ $page.frontmatter.title }} 
+            </h1>
             <PostMeta :post="$page" />
         </div>
 
@@ -46,18 +46,18 @@ export default {
 </script>
 
 <style lang="stylus">
-.post-tile
-    padding: calc(3.5rem / 2) 0 calc(3.5rem / 2); 
+.post-title
+    padding: calc(var(--space) / 2) 0 calc(var(--space) / 2); 
     text-align: center;
 
 .post
     &__header
-        width: calc(100% + 3.5rem * 2);
-        margin-left: calc(3.5rem * -1);
-        margin-top: calc(3.5rem * -1);
-        margin-bottom: calc(3.5rem / 2);
+        width: calc(100% + var(--space) * 2);
+        margin-left: calc(var(--space) * -1);
+        margin-top: calc(var(--space) * -1);
+        margin-bottom: calc(var(--space) / 2);
         overflow: hidden;
-        border-radius: 5px 5px 0 0;
+        border-radius: var(--radius) var(--radius) 0 0;
 
         img 
             width: 100%;
@@ -76,11 +76,16 @@ export default {
             color: --v-TitleColor-base;        
 
         img
-            width: calc(100% + 3.5rem * 2);
-            margin-left: calc(3.5rem * -1);
+            width: calc(100% + var(--space) * 2);
+            margin-left: calc(var(--space) * -1);
             display: block;
             max-width: none;
 
 .post-comments
-    margin-top: calc(3.5rem * 1);
+    margin-top: calc(var(--space) * 1);
+
+
+.post-author
+    margin-top: calc(var(--space) / 2);
+
 </style>
