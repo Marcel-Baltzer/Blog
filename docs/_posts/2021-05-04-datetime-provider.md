@@ -93,7 +93,7 @@ public void OffsetServiceTest()
     A.CallTo(() => fakeDateTimeProvider.GetDateTimeUtcNow())
         .Returns(fakeUtcNow);
 
-    var offset = new Offset(fakeDateTimeProvider);
+    var offset = new OffsetService(fakeDateTimeProvider);
 
     var result = offset.ReturnCurrentOffset();
 
