@@ -169,7 +169,6 @@ public class DatabaseTests : IClassFixture<DatabaseFixture>
         Debug.WriteLine("Execute Test 2");
     }
 }
-
 ```
 
 When we run this test we can see that the DatabaseFixture constructor is called add the beginning and dispose after the last test.
