@@ -20,7 +20,7 @@ Fake Dependencies with an Interface and Dependency Injection is easy and the usu
 
 The first situation is a small AWS Lambda function with an http call. We want to mock the .Net HttpClient and write a UnitTest for our Request method.
 
-Here you can see a simple exapmle:
+Here you can see a simple example:
 
 ```csharp
 public class RequestService
@@ -75,7 +75,7 @@ public class RequestService
 }
 ```
 
-Now we can start to write our Test. First step is that we create a FakeRequestService and override the factory method to take control over the `IHttpHandler`.
+With this little refactoring we can start writing our Test. To take control over the `IHttpHandler` we create a `FakeRequestService` and override the factory method.
 
 ```csharp
 internal class FakeRequestService : RequestService
@@ -85,7 +85,7 @@ internal class FakeRequestService : RequestService
 }
 ```
 
-Now we can use the `FakeRequestService` and write the UnitTest. We have the control over `IHttpHandler` and can check if our `SendPostRequest` method called the `PostAsync` method with the correct parameters.
+We can initialize the `FakeRequestService` with our own `IHttpHandler`. Now we have the control over `IHttpHandler` and can check if our `SendPostRequest` method called the `PostAsync` method with the correct parameters.
 
 ```csharp
 public async Task PostRequestTest()
